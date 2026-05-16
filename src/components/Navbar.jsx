@@ -14,8 +14,8 @@ export default function Navbar({ darkMode, setDarkMode, studiedCount, totalCount
             <GraduationCap size={17} className="text-white" />
           </div>
           <div className="hidden xs:block min-w-0">
-            <p className="text-xs font-bold text-slate-800 dark:text-white leading-tight truncate">Expert Systems</p>
-            <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-tight">Final Exam Quiz</p>
+            <p className="text-xs font-bold text-slate-800 dark:text-white leading-tight truncate">NLP</p>
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-tight">Quiz</p>
           </div>
         </div>
 

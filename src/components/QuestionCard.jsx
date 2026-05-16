@@ -7,10 +7,11 @@ import {
 
 // ── Color map per category ──────────────────────────────────
 const CAT_STYLES = {
-  'Expert Systems':    { badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',   dot: 'bg-blue-500'    },
-  'Prolog':            { badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300', dot: 'bg-emerald-500' },
-  'Semantic Networks': { badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',  dot: 'bg-amber-500'   },
-  'Logic':             { badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',     dot: 'bg-rose-500'    },
+  'NLP':                  { badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',       dot: 'bg-blue-500'    },
+  'Regular Expressions':  { badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300', dot: 'bg-emerald-500' },
+  'Automata':             { badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',   dot: 'bg-amber-500'   },
+  'Morphology':           { badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',       dot: 'bg-rose-500'    },
+  'N-grams':              { badge: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300', dot: 'bg-purple-500' },
 };
 
 /**
@@ -27,7 +28,7 @@ export default function QuestionCard({
   const [showAnswer, setShowAnswer] = useState(false);
   const [copied, setCopied]         = useState(false);
 
-  const catStyle = CAT_STYLES[question.category] || CAT_STYLES['Expert Systems'];
+  const catStyle = CAT_STYLES[question.category] || CAT_STYLES['NLP'];
 
   const animClass = {
     right:  'animate-slide-in-right',

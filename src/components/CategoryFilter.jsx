@@ -1,13 +1,14 @@
 // Category filter chip list
-const CATEGORIES = ['All', 'Expert Systems', 'Prolog', 'Semantic Networks', 'Logic'];
+const CATEGORIES = ['All', 'NLP', 'Regular Expressions', 'Automata', 'Morphology', 'N-grams'];
 
 // Color map for each category
 const CAT_COLORS = {
-  'All':              'bg-violet-600 text-white border-violet-600',
-  'Expert Systems':   'bg-blue-600 text-white border-blue-600',
-  'Prolog':           'bg-emerald-600 text-white border-emerald-600',
-  'Semantic Networks':'bg-amber-500 text-white border-amber-500',
-  'Logic':            'bg-rose-500 text-white border-rose-500',
+  'All':                  'bg-violet-600 text-white border-violet-600',
+  'NLP':                  'bg-blue-600 text-white border-blue-600',
+  'Regular Expressions':  'bg-emerald-600 text-white border-emerald-600',
+  'Automata':             'bg-amber-500 text-white border-amber-500',
+  'Morphology':           'bg-rose-500 text-white border-rose-500',
+  'N-grams':              'bg-purple-600 text-white border-purple-600',
 };
 
 // Inactive style

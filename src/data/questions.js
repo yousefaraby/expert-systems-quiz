@@ -1,276 +1,280 @@
 // ─────────────────────────────────────────────────────────────
-//  Quiz questions — Final Exam (exact content, no additions)
+//  Quiz questions — NLP Subject
 // ─────────────────────────────────────────────────────────────
 
 export const questions = [
   {
     id: 1,
-    category: "Expert Systems",
-    question: "Define what an expert system is and give five different applications for it.",
-    answer: `Expert systems are computer applications that use non-algorithmic expertise to solve specific problems.
-
-**Application of Expert systems**
-
-Used in: diagnostic applications, playing chess, financial planning, computer configuration, and real-time systems.`,
+    category: "NLP",
+    question: "What is the main goal of the field of Natural Language Processing (NLP)?",
+    answer: `To make computers perform useful tasks with human language (like human-machine communication, or processing text/speech).`,
   },
   {
     id: 2,
-    category: "Expert Systems",
-    question: "Draw a functional diagram of an expert system explaining its main components.",
-    answer: `**Basic Function of an Expert system**
-
-Consists of: Knowledge base (stores expert knowledge) and Inference engine (draws conclusions).`,
+    category: "NLP",
+    question: "What are the three main components of a modern conversational agent?",
+    answer: `• Automatic speech recognition
+• Natural language understanding
+• Language output`,
   },
   {
     id: 3,
-    category: "Expert Systems",
-    question: "Define the main persons interacting with an expert system. Give a brief definition of each.",
-    answer: `- **Domain expert** – expert who solves the problem.
-- **Knowledge engineer** – converts expert knowledge into the system.
-- **User** – uses the system to get advice.
-- **System engineer** – builds the system and interface.`,
+    category: "NLP",
+    question: "List the five levels of linguistic analysis in NLP.",
+    answer: `    Morphology
+Syntax
+Semantics
+Pragmatics
+Discourse`,
   },
   {
     id: 4,
-    category: "Expert Systems",
-    question: "Discuss briefly the advantages and disadvantages of the expert system.",
-    answer: `**Advantages:**
-- Provide expert-level solutions.
-- Work quickly and consistently.
-- Can be used in many applications that require human expertise.
-
-**Disadvantages:**
-- Increased initial building cost.`,
+    category: "NLP",
+    question: "What is the difference between morphology and syntax?",
+    answer: `• Morphology: Focuses on the word (how words are built from smaller parts like stems and affixes).
+• Syntax: Focuses on the sentence (how words are put together to form correct sentences).`,
   },
   {
     id: 5,
-    category: "Expert Systems",
-    question: "Define the term epistemology and explain its importance to the expert system.",
-    answer: `- The study of knowledge.
-- Concerned with nature, structure and origins of knowledge.
-- Knowledge is of primary importance to expert systems.`,
+    category: "NLP",
+    question: "What is ambiguity in the context of NLP?",
+    answer: `When the same input has more than one possible interpretation (multiple linguistic structures).`,
   },
   {
     id: 6,
-    category: "Expert Systems",
-    question: "Discuss the difference between posteriori and priori knowledge.",
-    answer: `**A PRIORI knowledge**
-- Known without experience (by thinking).
-- Always true and certain.
-
-**A POSTERIORI knowledge**
-- Learned from experience.
-- Not always reliable (depends on person).`,
+    category: "NLP",
+    question: "Define the following terms: Token, Sentence, Corpus.",
+    answer: `• Token: A single unit (a word, number, or punctuation mark).
+• Sentence: An ordered sequence of tokens.
+• Corpus: A large body of text (contains many sentences).`,
   },
   {
     id: 7,
-    category: "Expert Systems",
-    question: "Draw the pyramid of knowledge and discuss its basic terms.",
-    answer: `Data → Information → Knowledge → Wisdom
-
-*(Draw the pyramid with four levels from bottom to top: Data, Information, Knowledge, Wisdom)*`,
+    category: "Regular Expressions",
+    question: "What does the caret (^) do when used inside brackets in a regular expression?",
+    answer: `It negates the pattern (matches any character except the ones specified).`,
   },
   {
     id: 8,
-    category: "Expert Systems",
-    question: "Define the main elements of an inference tree. Draw a binary three levels tree.",
-    answer: `**Trees**
-- Hierarchical structure of nodes and branches.
-- Nodes store information, branches connect nodes.
-- Top node is root, bottom nodes are leaves.
-
-**Binary trees**
-- Each node has one parent (except root).
-- Each node has at most two children.`,
+    category: "Regular Expressions",
+    question: "What is the difference between Kleene * and Kleene +?",
+    answer: `• Kleene *: "Zero or more occurrences".
+• Kleene +: "One or more occurrences".`,
   },
   {
     id: 9,
-    category: "Semantic Networks",
-    question: "Discuss drawings on different types of graphs (cyclic, Acyclic, connected, nonconnected).",
-    answer: `1. **A cycle (circuit graph)** – Graph that have the same starting and end point.
-2. **Acyclic graph** – Graph that has no cycles.
-3. **Connected graph** – Have links to all nodes.
-4. **Diagraph** – Graphs with directed arrows.
-5. **Lattice**`,
+    category: "Regular Expressions",
+    question: "What does the period (.) represent in a regular expression?",
+    answer: `It is a wildcard that matches any single character (except a carriage return).`,
   },
   {
     id: 10,
-    category: "Semantic Networks",
-    question: "Discuss the main components of the semantic network.",
-    answer: `A semantic net is a labelled, directed graph called also a propositional net or associative net.
-
-A proposition is a statement that is either true or false.
-
-It consists of:
-- **Nodes:** represent objects, concepts, or situations.
-- **Arcs:** show relations between nodes.`,
+    category: "Regular Expressions",
+    question: `How would you write a regular expression to match both "gray" and "grey"?`,
+    answer: `/gr(a|e)y/ or /gray|grey/.`,
   },
   {
     id: 11,
-    category: "Semantic Networks",
-    question: "Discuss the main components of semantic net. Explain the main difference between semantic nets and a general net using an example.",
-    answer: `A semantic net is a labelled, directed graph called also a propositional net or associative net.
-
-A proposition is a statement that is either true or false.
-
-It consists of:
-- **Nodes:** represent objects, concepts, or situations.
-- **Arcs:** show relations between nodes.`,
+    category: "Regular Expressions",
+    question: `What do the following shorthand character classes represent? \\d, \\D, \\w, \\s`,
+    answer: `
+    • \\d : Any digit (0–9).
+• \\D : Any non-digit.
+• \\w : Any alphanumeric character or underscore.
+• \\s : Any whitespace character (space, tab, newline, etc.).`,
   },
   {
     id: 12,
-    category: "Prolog",
-    question: "Define predecessor rule using recursion.",
-    answer: `\`\`\`prolog
-predecessor(X, Y, [X,Y|_]).
-predecessor(X, Y, [_|T]) :-
-    predecessor(X, Y, T).
-\`\`\``,
+    category: "Automata",
+    question: "What are the three types of automata mentioned and what languages do they define?",
+    answer: `• Finite-state automata: define regular languages.
+• Pushdown automata: define context-free languages.
+• Turing machines: define recursively enumerable languages.`,
   },
   {
     id: 13,
-    category: "Prolog",
-    question: "Define member rules using two different methods.",
-    answer: `**Method 1:**
-\`\`\`prolog
-member(X, [X|_]).
-member(X, [_|T]) :-
-    member(X, T).
-\`\`\`
-
-**Method 2:**
-\`\`\`prolog
-member(X, List) :-
-    append(_, [X|_], List).
-\`\`\``,
+    category: "Automata",
+    question: "What is a regular language?",
+    answer: `A formal language that can be expressed using a regular expression. It is also a subset of context-free languages.`,
   },
   {
     id: 14,
-    category: "Prolog",
-    question: "Define an insert rule for lists using delete rule.",
-    answer: `**Insert an item into list using delete rule**
-
-\`\`\`prolog
-insert(X, List, BiggerList) :- del(X, BiggerList, List).
-\`\`\``,
+    category: "Automata",
+    question: "What is the relationship between regular expressions and finite-state automata?",
+    answer: `They are equivalent: any regular expression can be implemented as a finite-state automaton, and vice versa. Both are used to describe regular languages.`,
   },
   {
     id: 15,
-    category: "Logic",
-    question: "Discuss the different connectives for propositional logic.",
-    answer: `- **Negation (¬):** not A (opposite of A).
-- **Conjunction (∧):** A and B (true if both true).
-- **Disjunction (∨):** A or B (true if one or both true).
-- **Conditional (→):** if A then B (false only if A true and B false).
-- **Biconditional (↔):** A iff B (true if both same).`,
+    category: "Automata",
+    question: "What are the five parameters that define a finite automaton?",
+    answer: `• Q: A finite set of states.
+• Σ (Sigma): A finite input alphabet of symbols.
+• q₀: The start state.
+• F: The set of final states.
+• δ (Delta): The transition function.`,
   },
   {
     id: 16,
-    category: "Prolog",
-    question: "Define a delete rule for list.",
-    answer: `**Delete an item from list definition**
-
-\`\`\`prolog
-del(X, [X|Tail], Tail).
-del(X, [Y|Tail], [Y|Tail1]) :-
-    del(X, Tail, Tail1).
-\`\`\`
-
-**Delete elements from list:**
-\`\`\`prolog
-del(a, [a,b,a,a], L).
-L = [b,a,a];
-L = [a,b,a];
-L = [a,b,a];
-\`\`\``,
+    category: "Automata",
+    question: "What is the difference between a deterministic FSA (DFSA) and a non-deterministic FSA (NFSA)?",
+    answer: `• DFSA: Has exactly one transition for each state and input symbol.
+• NFSA: Can have multiple possible transitions for the same state and input symbol (including ε-transitions).`,
   },
   {
     id: 17,
-    category: "Prolog",
-    question: "Explain the read and write rules functionality in Prolog. Give examples.",
-    answer: `**Prolog read rule:**
-
-read/1 reads a term from the user and stores it as a Prolog term.
-
-\`\`\`prolog
-main :-
-    write('Enter a Prolog term: '),
-    read(Term),
-    write('You entered: '),
-    write(Term),
-    nl.
-\`\`\``,
+    category: "Automata",
+    question: "What are ε-transitions in an NFSA?",
+    answer: `Transitions (arcs) that have no symbols on them. They allow the automaton to move to another state without consuming any input.`,
   },
   {
     id: 18,
-    category: "Prolog",
-    question: "Define concatenation rule for two lists.",
-    answer: `\`\`\`prolog
-?- conc(L1, L2, [a,b,c]).
-L1 = []
-L2 = [a,b,c];
-L1 = [a]
-L2 = [b,c];
-L1 = [a,b]
-L2 = [c];
-L1 = [a,b,c]
-L2 = [];
-No
-\`\`\``,
+    category: "Morphology",
+    question: `Problem 2
+Based on the description of a Morphological noun parser, the machine recognizes specific markers like +SG (singular) and +PL (plural) to correspond with morphemes.
+For the English word "cats," the lexical level might be represented as cat +N +PL.
+1.Provide the correct lexical level representation for the word "foxes."
+2.Provide the correct lexical level representation for the word "dog."`,
+    answer: `1.	Lexical representation for "foxes":
+fox +N +PL
+(Explanation: The root is "fox," it is a noun (+N), and it is plural (+PL).)
+2.	Lexical representation for "dog":
+dog +N +SG
+(Explanation: The root is "dog," it is a noun, and it is singular. The singular feature +SG is often explicitly represented in parsers even if it results in a null morpheme.)`,
   },
   {
     id: 19,
-    category: "Expert Systems",
-    question: "Explain uncertainty and their applications in Expert systems.",
-    answer: `**Uncertainty in Expert systems**
-
-- Uncertainty is lack of complete information.
-- Handled using probability, fuzzy logic, etc.
-- Applications: medical diagnosis, decision making, predictions.`,
+    category: "Morphology",
+    question: `Problem 2
+There are three-tiered system: Lexical, Intermediate, and Surface. The intermediate level uses symbols like ^ (morpheme boundary) and # (word boundary) before spelling changes are applied.
+The lexical form for "wishes" is wish +N +PL. Using the example of fox +N +PL as a guide, write the correct string for:
+1.The Intermediate Level (inserting ^ and #).
+2.The Surface Level (after the E-insertion rule has been applied).`,
+    answer: `1.	Intermediate Level:
+wish ^ s #
+(Explanation: The morpheme boundary symbol ^ is placed between the root "wish" and the plural morpheme "s," and the word boundary # is placed at the end.)
+2.	Surface Level:
+wishes #
+(Explanation: Because "wish" ends with a sibilant sound ("sh"), the E-insertion rule applies, changing wish^s# to wishes#.)`,
   },
   {
     id: 20,
-    category: "Expert Systems",
-    question: "Draw and explain a figure for the development of an expert system.",
-    answer: `*(Draw the development lifecycle diagram)*
-
-Steps: Problem identification → Knowledge acquisition → Knowledge representation → System implementation → Testing and evaluation.`,
+    category: "Morphology",
+    question: `Problem 3
+According to E-insertion rule, which adds an "e" to the spelling when transitioning from the intermediate form (e.g., fox^s#) to the surface form (e.g., foxes#).
+Apply this rule to the following intermediate forms. Write the resulting surface form.
+1.watch^s#
+2.church^s#
+3.boy^s# (Note: Does this word require an 'e' to be inserted for a correct plural? Explain why or why not in one sentence.)`,
+    answer: `1.	 watch^s# → watches#
+2.	church^s# → churches#
+3.	boy^s# → boys#
+o	Explanation: Because "boy" ends with a vowel, not a sibilant.`,
   },
   {
     id: 21,
-    category: "Prolog",
-    question: "Define two list rules to evenlength and oddlength that gives true or false depending on the list size.",
-    answer: `\`\`\`prolog
-evenlength([]).
-evenlength([_|Xs]) :-
-    oddlength(Xs).
-
-oddlength([_|Xs]) :-
-    evenlength(Xs).
-\`\`\``,
+    category: "Morphology",
+    question: `Question 4
+Finite-State Transducers (FSTs) use rules to map between levels. The E-insertion rule can be thought of as: Insert an e between a sibilant consonant and an s.
+Using the notation (where ^ and # are present at the intermediate level), complete the following rewrite rule that an FST might follow to get from the intermediate to the surface level. Assume X represents a sibilant sound (like s, z, sh, ch, x).
+X ^ s # → _________________`,
+    answer: `  X ^ s # → X e s #
+(Explanation: The rule states that when a sibilant (X) is followed by a morpheme boundary and an "s" at the end of a word, the transducer should rewrite that sequence by inserting an "e" before the "s.")`,
   },
   {
     id: 22,
-    category: "Expert Systems",
-    question: "Discuss the main idea of your expert systems project and draw a semantic tree for the knowledge base. State your added rules to the project.",
-    answer: `\`\`\`prolog
-disease(covid19).
-symptom(covid19, fever).
-symptom(covid19, cough).
-symptom(covid19, tiredness).
-advice(covid19, 'Rest and drink fluids').
+    category: "Morphology",
+    question: `Question 5
+A linguist runs a morphological parser on a large set of English words. The parser handles the word "fox" correctly (fox +N +PL → foxes). However, when given the word "book" (book +N +PL), the parser incorrectly outputs bookes.
+Based on the rules (specifically the E-insertion Rule and the mention of the "other" symbol), why did the parser fail for the word "book"? What assumption did the machine make that was incorrect for this specific word?`,
+    answer: `The parser failed because the E-insertion rule was over-applied.
+The machine assumed that all nouns require the "e" insertion before adding the plural "s." Based on the lecture's mention of the "other" symbol, a correct parser needs to distinguish between:
+1.	Sibilant endings (like x in fox, sh in wish, ch in church) that trigger the rule.
+2.	"Other" endings (like the k in book) that are not sibilants and should simply concatenate the "s" without inserting an "e."
+The parser lacked the condition to check the final sound of the root; it applied the spelling change rule indiscriminately to every word.`,
+  },
+  {
+    id: 23,
+    category: "N-grams",
+    question: `Question 4: 
+For the given assumption: 
+"P(lizard | the other day I was walking along and saw a) = P(lizard | a)" 
+a)	What is this assumption called in n-gram modeling? 
+b)	 For a bigram model, what is the length of the history that is retained? 
+c)	 Give one advantage and one disadvantage of this assumption.`,
+    answer: `a)This is the Markov assumption (specifically, the first-order Markov assumption for bigrams).
 
-match_count(Disease, UserSymptoms, Count) :-
-    findall(S,
-        (symptom(Disease, S), member(S, UserSymptoms)),
-        Matches),
-    length(Matches, Count).
+ b) For a bigram model, only the previous word (history length = 1) is retained.
 
-diagnosis(Disease, UserSymptoms) :-
-    match_count(Disease, UserSymptoms, Match),
-    Match >= 2,
-    score(Disease, UserSymptoms, Score),
-    Score >= 30.
-\`\`\``,
+c)Advantage: Drastically reduces the number of parameters and makes estimation feasible from limited data
+Disadvantage: Loses long-range dependencies (e.g., syntactic or semantic relationships beyond the previous word).`,
+  },
+  {
+    id: 24,
+    category: "N-grams",
+    question: `Question 8 : Short Answer Questions 
+a)	Define a language model in your own words. 
+b)	b) What is the chain rule used for in language modeling? 
+c)	c) How would you estimate P(water | its) using a corpus?`,
+    answer: `a) A language model predicts the probability of word sequences and the next word.
+b) The chain rule splits sentence probability into conditional probabilities.
+c) P(water | its) = count(its water) / count(its)
+Count "its water" and divide by count(its).`,
+  },
+  {
+    id: 25,
+    category: "N-grams",
+    question: `Question 7: 
+Assume the following: 
+•	P(I want to eat British food) = 0.000080 
+•	P(I want to eat Chinese food) = 0.00015 
+a) Which sentence has a higher probability according to the model? 
+b) Based on the BERP fragments in Slide 11 and 12, which specific bigram probabilities cause the difference? 
+c) What does this suggest about the model's "knowledge" of cuisine preferences?`,
+    answer: `a) "I want to eat Chinese food" has the higher probability (0.00015 > 0.000080). 
+b) Because P(Chinese | eat) is higher than P(British | eat).
+ c) The model depends on training data frequency, not real-world knowledge`,
+  },
+  {
+    id: 26,
+    category: "N-grams",
+    question: `Question 6: 
+Assume P(food | to) = 0. 
+a)	Explain why this probability is zero in the given BERP table. 
+b)	 What problem does this illustrate in simple n-gram models? 
+c)	 Name one technique to address this problem.`,
+    answer: `a) P(food | to) = 0 because "to food" did not occur in the training data.
+b) This shows the data sparsity problem in n-gram models.
+c) It can be solved using smoothing, such as Laplace smoothing.`,
+  },
+  {
+    id: 27,
+    category: "Morphology",
+    question: `Question 4: What are the two main levels of representation in two-level morphology, and what do they represent?`,
+    answer: `• Lexical Level: The stem + morphological info (e.g., cat +N +PL).
+• Surface Level: The actual final spelling (e.g., cats).`,
+  },
+  {
+    id: 28,
+    category: "Morphology",
+    question: `Question 5: What is the purpose of morphological parsing ?`,
+    answer: `To map between the surface level (actual spelling) and the lexical level (stem + info).`,
+  },
+  {
+    id: 29,
+    category: "Morphology",
+    question: `Question 6: In the context of two-level morphology transitions, explain the meaning of the notation c:c.`,
+    answer: `The symbol is the same on both levels (read 'c', write 'c').`,
+  },
+  {
+    id: 30,
+    category: "Morphology",
+    question: `Question 7: Explain the meaning of the notation +PL:s in the context of a transition in a two-level morphological model.`,
+    answer: `Lexical tag +PL becomes the letter s on the surface level.`,
+  },
+  {
+    id: 31,
+    category: "Morphology",
+    question: `Question 8: What is the significance of the epsilon ( ) symbol in a transition like N: ?`,
+    answer: `The epsilon represents an empty string (it means the lexical tag becomes nothing on the surface level).`,
   },
 ];
