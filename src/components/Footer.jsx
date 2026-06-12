@@ -13,7 +13,7 @@ export default function Footer() {
         </p>
         <Heart size={13} className="text-rose-500 fill-rose-500 animate-pulse-slow" />
         <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-          for NLP Quiz
+          for Computer Graphics Quiz
         </p>
       </div>
       <p className="mt-3 text-xs text-slate-400 dark:text-slate-600">

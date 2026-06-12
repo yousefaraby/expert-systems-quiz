@@ -1,280 +1,294 @@
 // ─────────────────────────────────────────────────────────────
-//  Quiz questions — NLP Subject
+//  Quiz questions — Computer Graphics Subject
 // ─────────────────────────────────────────────────────────────
 
 export const questions = [
   {
     id: 1,
-    category: "NLP",
-    question: "What is the main goal of the field of Natural Language Processing (NLP)?",
-    answer: `To make computers perform useful tasks with human language (like human-machine communication, or processing text/speech).`,
+    category: "Introduction",
+    question: "What are the four main subfields of computer graphics mentioned in the lecture?",
+    answer: "Imaging, Rendering, Geometry (Modeling), and Animation.",
   },
   {
     id: 2,
-    category: "NLP",
-    question: "What are the three main components of a modern conversational agent?",
-    answer: `• Automatic speech recognition
-• Natural language understanding
-• Language output`,
+    category: "Introduction",
+    question: "What is the difference between imaging and rendering?",
+    answer: "Imaging deals with image acquisition and editing, while rendering focuses on algorithms that simulate light transport to generate images from 3D models.",
   },
   {
     id: 3,
-    category: "NLP",
-    question: "List the five levels of linguistic analysis in NLP.",
-    answer: `    Morphology
-Syntax
-Semantics
-Pragmatics
-Discourse`,
+    category: "Introduction",
+    question: "Name three operations or effects that computer graphics can perform on objects.",
+    answer: "Rotation, scaling, translation, shading, transparency, and surface removal.",
   },
   {
     id: 4,
-    category: "NLP",
-    question: "What is the difference between morphology and syntax?",
-    answer: `• Morphology: Focuses on the word (how words are built from smaller parts like stems and affixes).
-• Syntax: Focuses on the sentence (how words are put together to form correct sentences).`,
+    category: "Imaging",
+    question: "What are some key topics covered under the “Imaging” subfield?",
+    answer: "Image representation, sampling, reconstruction, quantization, aliasing, image processing, filtering, warping, morphing, display devices, and color models.",
   },
   {
     id: 5,
-    category: "NLP",
-    question: "What is ambiguity in the context of NLP?",
-    answer: `When the same input has more than one possible interpretation (multiple linguistic structures).`,
+    category: "Rendering Pipeline",
+    question: "List at least five stages of the 3D rendering pipeline as presented in the lecture.",
+    answer: "Modeling transformations, viewing transformations, hidden surface removal, illumination and shading, texture mapping, scan conversion, and clipping.",
   },
   {
     id: 6,
-    category: "NLP",
-    question: "Define the following terms: Token, Sentence, Corpus.",
-    answer: `• Token: A single unit (a word, number, or punctuation mark).
-• Sentence: An ordered sequence of tokens.
-• Corpus: A large body of text (contains many sentences).`,
+    category: "Rendering Pipeline",
+    question: "What is the purpose of hidden surface removal in the rendering pipeline?",
+    answer: "It ensures that objects occluded by other objects are not drawn, so the final image correctly represents which surfaces are visible from the camera’s viewpoint.",
   },
   {
     id: 7,
-    category: "Regular Expressions",
-    question: "What does the caret (^) do when used inside brackets in a regular expression?",
-    answer: `It negates the pattern (matches any character except the ones specified).`,
+    category: "Introduction",
+    question: "Give three examples of graphics applications mentioned in the lecture.",
+    answer: "Entertainment (e.g., Toy Story, Jurassic Park), Computer-aided design (e.g., gear shaft design, airport modeling), and Scientific visualization (e.g., airflow in a thunderstorm, Visible Human Project).",
   },
   {
     id: 8,
-    category: "Regular Expressions",
-    question: "What is the difference between Kleene * and Kleene +?",
-    answer: `• Kleene *: "Zero or more occurrences".
-• Kleene +: "One or more occurrences".`,
+    category: "Modeling",
+    question: "What is the role of modeling in computer graphics?",
+    answer: "Modeling involves representing and processing surfaces using techniques such as curves, surfaces, solids, procedural modeling, and fractals.",
   },
   {
     id: 9,
-    category: "Regular Expressions",
-    question: "What does the period (.) represent in a regular expression?",
-    answer: `It is a wildcard that matches any single character (except a carriage return).`,
+    category: "Hardware & Displays",
+    question: "What is a framebuffer?",
+    answer: "A framebuffer is a video output device that drives a video display from a memory containing the color information for every pixel.",
   },
   {
     id: 10,
-    category: "Regular Expressions",
-    question: `How would you write a regular expression to match both "gray" and "grey"?`,
-    answer: `/gr(a|e)y/ or /gray|grey/.`,
+    category: "Introduction",
+    question: "What are some examples of general graphics libraries and standards mentioned?",
+    answer: "Windows API, OpenGL, and Direct3D.",
   },
   {
     id: 11,
-    category: "Regular Expressions",
-    question: `What do the following shorthand character classes represent? \\d, \\D, \\w, \\s`,
-    answer: `
-    • \\d : Any digit (0–9).
-• \\D : Any non-digit.
-• \\w : Any alphanumeric character or underscore.
-• \\s : Any whitespace character (space, tab, newline, etc.).`,
+    category: "Math & Geometry",
+    question: "Explain the difference between a point and a vector in computer graphics. How does translation affect each?",
+    answer: "**Vectors vs. Points**\n\n- A **point** represents a position or location in space.\n- A **vector** represents a direction and magnitude (displacement).\n\n**Translation:**\n- Translating a point changes its position → results in a new point.\n- Translating a vector does not change it — direction and magnitude remain the same.",
   },
   {
     id: 12,
-    category: "Automata",
-    question: "What are the three types of automata mentioned and what languages do they define?",
-    answer: `• Finite-state automata: define regular languages.
-• Pushdown automata: define context-free languages.
-• Turing machines: define recursively enumerable languages.`,
+    category: "Math & Geometry",
+    question: "What are the two defining attributes of a vector? When are two vectors considered equal?",
+    answer: "**Vector Properties**\n\n- Two attributes: **Direction** and **Magnitude** (length).\n- Two vectors are equal if and only if they have the same length and same direction.",
   },
   {
     id: 13,
-    category: "Automata",
-    question: "What is a regular language?",
-    answer: `A formal language that can be expressed using a regular expression. It is also a subset of context-free languages.`,
+    category: "Math & Geometry",
+    question: "Write the formula for the dot product of two vectors a and b in terms of their magnitudes and the angle between them. What does the dot product represent geometrically?",
+    answer: "`a · b = ||a|| ||b|| cos(θ)`\n\n**Geometric meaning:** The dot product measures the projection of one vector onto another (how much the vectors point in the same direction).",
   },
   {
     id: 14,
-    category: "Automata",
-    question: "What is the relationship between regular expressions and finite-state automata?",
-    answer: `They are equivalent: any regular expression can be implemented as a finite-state automaton, and vice versa. Both are used to describe regular languages.`,
+    category: "Math & Geometry",
+    question: "What is the result of the cross product of two parallel vectors? Is the cross product commutative? Justify your answer.",
+    answer: "The magnitude of the cross product is `||a × b|| = ||a|| ||b|| sin(θ)`.\nIf they are parallel, then `θ = 0` and `sin(0) = 0`, so the result is the **zero vector**.\n\nThe cross product is **not commutative** because reversing the order reverses the direction: `a × b = -(b × a)`.",
   },
   {
     id: 15,
-    category: "Automata",
-    question: "What are the five parameters that define a finite automaton?",
-    answer: `• Q: A finite set of states.
-• Σ (Sigma): A finite input alphabet of symbols.
-• q₀: The start state.
-• F: The set of final states.
-• δ (Delta): The transition function.`,
+    category: "Math & Geometry",
+    question: "Describe the difference between a right-handed and a left-handed 3D coordinate system. How can you determine the orientation using your hand?",
+    answer: "- **Right-handed:** If x goes right and y goes up, z comes *out* towards you.\n- **Left-handed:** If x goes right and y goes up, z goes *away* from you.\n\n**Hand Rule:** Roll the fingers from the positive x-axis toward the positive y-axis; your thumb will point in the direction of the positive z-axis.",
   },
   {
     id: 16,
-    category: "Automata",
-    question: "What is the difference between a deterministic FSA (DFSA) and a non-deterministic FSA (NFSA)?",
-    answer: `• DFSA: Has exactly one transition for each state and input symbol.
-• NFSA: Can have multiple possible transitions for the same state and input symbol (including ε-transitions).`,
+    category: "Math & Geometry",
+    question: "Define sin θ, cos θ, and tan θ using a right-angle triangle. How are radians and degrees related?",
+    answer: "$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}, \\quad \\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}, \\quad \\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n\n*Radians and degrees relation:* $180^\\circ = \\pi \\text{ radians}$",
   },
   {
     id: 17,
-    category: "Automata",
-    question: "What are ε-transitions in an NFSA?",
-    answer: `Transitions (arcs) that have no symbols on them. They allow the automaton to move to another state without consuming any input.`,
+    category: "Math & Geometry",
+    question: "Is matrix multiplication commutative? Provide an example 2x2 matrix to support your answer.",
+    answer: "## Matrix Multiplication\n\nMatrix multiplication is **not commutative**:\n\n$$AB \\neq BA \\quad \\text{in general}$$\n\n*Example:* Let $A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$ and $B = \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$. Then $AB = \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$ while $BA = \\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$.",
   },
   {
     id: 18,
-    category: "Morphology",
-    question: `Problem 2
-Based on the description of a Morphological noun parser, the machine recognizes specific markers like +SG (singular) and +PL (plural) to correspond with morphemes.
-For the English word "cats," the lexical level might be represented as cat +N +PL.
-1.Provide the correct lexical level representation for the word "foxes."
-2.Provide the correct lexical level representation for the word "dog."`,
-    answer: `1.	Lexical representation for "foxes":
-fox +N +PL
-(Explanation: The root is "fox," it is a noun (+N), and it is plural (+PL).)
-2.	Lexical representation for "dog":
-dog +N +SG
-(Explanation: The root is "dog," it is a noun, and it is singular. The singular feature +SG is often explicitly represented in parsers even if it results in a null morpheme.)`,
+    category: "Math & Geometry",
+    question: "Compute the determinant of the following matrix:\n\n$$\\begin{bmatrix} 6 & 1 & 1 \\\\ 4 & -2 & 5 \\\\ 2 & 8 & 7 \\end{bmatrix}$$",
+    answer: "$$C = \\begin{bmatrix} 6 & 1 & 1 \\\\ 4 & -2 & 5 \\\\ 2 & 8 & 7 \\end{bmatrix}$$\n\n$$\n\\begin{aligned}\n|C| &= 6 \\times [(-2 \\times 7) - (5 \\times 8)] \\\\\n&\\quad - 1 \\times [(4 \\times 7) - (5 \\times 2)] \\\\\n&\\quad + 1 \\times [(4 \\times 8) - (-2 \\times 2)] \\\\\n&= 6 \\times (-14 - 40) - 1 \\times (28 - 10) + 1 \\times (32 + 4) \\\\\n&= 6 \\times (-54) - 1 \\times (18) + 1 \\times (36) \\\\\n&= -324 - 18 + 36 \\\\\n&= -306\n\\end{aligned}\n$$",
   },
   {
     id: 19,
-    category: "Morphology",
-    question: `Problem 2
-There are three-tiered system: Lexical, Intermediate, and Surface. The intermediate level uses symbols like ^ (morpheme boundary) and # (word boundary) before spelling changes are applied.
-The lexical form for "wishes" is wish +N +PL. Using the example of fox +N +PL as a guide, write the correct string for:
-1.The Intermediate Level (inserting ^ and #).
-2.The Surface Level (after the E-insertion rule has been applied).`,
-    answer: `1.	Intermediate Level:
-wish ^ s #
-(Explanation: The morpheme boundary symbol ^ is placed between the root "wish" and the plural morpheme "s," and the word boundary # is placed at the end.)
-2.	Surface Level:
-wishes #
-(Explanation: Because "wish" ends with a sibilant sound ("sh"), the E-insertion rule applies, changing wish^s# to wishes#.)`,
+    category: "Math & Geometry",
+    question: "Under what condition does a square matrix have an inverse? Find the inverse of:\n\n$$A = \\begin{bmatrix} 4 & -9 \\\\ -3 & -5 \\end{bmatrix}$$",
+    answer: "A square matrix has an inverse if and only if its determinant is non-zero ($\\det(A) \\neq 0$).\n\n$$A = \\begin{bmatrix} 4 & -9 \\\\ -3 & -5 \\end{bmatrix}$$\n\n$$\\det(A) = (4)(-5) - (-9)(-3) = -20 - 27 = -47$$\n\n$$A^{-1} = \\frac{1}{-47} \\begin{bmatrix} -5 & 9 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} \\frac{5}{-47} & \\frac{-9}{-47} \\\\ \\frac{-3}{-47} & \\frac{-4}{-47} \\end{bmatrix} = \\begin{bmatrix} -\\frac{5}{47} & \\frac{9}{47} \\\\ \\frac{3}{47} & \\frac{4}{47} \\end{bmatrix}$$",
   },
   {
     id: 20,
-    category: "Morphology",
-    question: `Problem 3
-According to E-insertion rule, which adds an "e" to the spelling when transitioning from the intermediate form (e.g., fox^s#) to the surface form (e.g., foxes#).
-Apply this rule to the following intermediate forms. Write the resulting surface form.
-1.watch^s#
-2.church^s#
-3.boy^s# (Note: Does this word require an 'e' to be inserted for a correct plural? Explain why or why not in one sentence.)`,
-    answer: `1.	 watch^s# → watches#
-2.	church^s# → churches#
-3.	boy^s# → boys#
-o	Explanation: Because "boy" ends with a vowel, not a sibilant.`,
+    category: "Math & Geometry",
+    question: "Given two 3D vectors $V_1 = (2, -1, 3)$ and $V_2 = (4, 0, -2)$, compute:\n* Their dot product\n* Their cross product\n* The magnitude of each vector",
+    answer: "* **Dot product:**\n\n$$V_1 \\cdot V_2 = 2 \\cdot 4 + (-1) \\cdot 0 + 3 \\cdot (-2) = 8 + 0 - 6 = 2$$\n\n* **Cross product:**\n\n$$V_1 \\times V_2 = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 2 & -1 & 3 \\\\ 4 & 0 & -2 \\end{vmatrix}$$\n\n$$\n\\begin{aligned}\n&= \\mathbf{i}((-1)(-2) - (3)(0)) - \\mathbf{j}((2)(-2) - (3)(4)) + \\mathbf{k}((2)(0) - (-1)(4)) \\\\\n&= \\mathbf{i}(2 - 0) - \\mathbf{j}(-4 - 12) + \\mathbf{k}(0 + 4) \\\\\n&= 2\\mathbf{i} + 16\\mathbf{j} + 4\\mathbf{k}\n\\end{aligned}\n$$\n\n* **Magnitudes:**\n\n$$||V_1|| = \\sqrt{2^2 + (-1)^2 + 3^2} = \\sqrt{4 + 1 + 9} = \\sqrt{14}$$\n\n$$||V_2|| = \\sqrt{4^2 + 0^2 + (-2)^2} = \\sqrt{16 + 0 + 4} = \\sqrt{20} = 2\\sqrt{5}$$",
   },
   {
     id: 21,
-    category: "Morphology",
-    question: `Question 4
-Finite-State Transducers (FSTs) use rules to map between levels. The E-insertion rule can be thought of as: Insert an e between a sibilant consonant and an s.
-Using the notation (where ^ and # are present at the intermediate level), complete the following rewrite rule that an FST might follow to get from the intermediate to the surface level. Assume X represents a sibilant sound (like s, z, sh, ch, x).
-X ^ s # → _________________`,
-    answer: `  X ^ s # → X e s #
-(Explanation: The rule states that when a sibilant (X) is followed by a morpheme boundary and an "s" at the end of a word, the transducer should rewrite that sequence by inserting an "e" before the "s.")`,
+    category: "Transformations",
+    question: "What is a geometric transformation? List the three basic types of transformations mentioned.",
+    answer: "**Geometric Transformation:** It is an operation that modifies the position, size, or orientation of a geometric object.\n\n**Three basic types:**\n1. Translation\n2. Rotation\n3. Scaling",
   },
   {
     id: 22,
-    category: "Morphology",
-    question: `Question 5
-A linguist runs a morphological parser on a large set of English words. The parser handles the word "fox" correctly (fox +N +PL → foxes). However, when given the word "book" (book +N +PL), the parser incorrectly outputs bookes.
-Based on the rules (specifically the E-insertion Rule and the mention of the "other" symbol), why did the parser fail for the word "book"? What assumption did the machine make that was incorrect for this specific word?`,
-    answer: `The parser failed because the E-insertion rule was over-applied.
-The machine assumed that all nouns require the "e" insertion before adding the plural "s." Based on the lecture's mention of the "other" symbol, a correct parser needs to distinguish between:
-1.	Sibilant endings (like x in fox, sh in wish, ch in church) that trigger the rule.
-2.	"Other" endings (like the k in book) that are not sibilants and should simply concatenate the "s" without inserting an "e."
-The parser lacked the condition to check the final sound of the root; it applied the spelling change rule indiscriminately to every word.`,
+    category: "Transformations",
+    question: "Write the general equations and the matrix representation for translating a point (x, y) by distances $t_x$ and $t_y$.",
+    answer: "**New location:** $P' = P + T$\n\n$$x' = x + t_x$$\n$$y' = y + t_y$$\n\n**Matrix representation (using homogeneous coordinates):**\n\n$$\\begin{bmatrix} x' \\\\ y' \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & t_x \\\\ 0 & 1 & t_y \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix}$$",
   },
   {
     id: 23,
-    category: "N-grams",
-    question: `Question 4: 
-For the given assumption: 
-"P(lizard | the other day I was walking along and saw a) = P(lizard | a)" 
-a)	What is this assumption called in n-gram modeling? 
-b)	 For a bigram model, what is the length of the history that is retained? 
-c)	 Give one advantage and one disadvantage of this assumption.`,
-    answer: `a)This is the Markov assumption (specifically, the first-order Markov assumption for bigrams).
-
- b) For a bigram model, only the previous word (history length = 1) is retained.
-
-c)Advantage: Drastically reduces the number of parameters and makes estimation feasible from limited data
-Disadvantage: Loses long-range dependencies (e.g., syntactic or semantic relationships beyond the previous word).`,
+    category: "Transformations",
+    question: "A triangle has vertices at A(2,7), B(7,10), and C(10,2). If it is translated by 3 units in the x-direction and 4 units in the y-direction, what are the coordinates of the new vertices A', B', and C'?",
+    answer: "Given translation $T = (3, 4)$:\n\n* $A' = (2+3, 7+4) = (5, 11)$\n* $B' = (7+3, 10+4) = (10, 14)$\n* $C' = (10+3, 2+4) = (13, 6)$",
   },
   {
     id: 24,
-    category: "N-grams",
-    question: `Question 8 : Short Answer Questions 
-a)	Define a language model in your own words. 
-b)	b) What is the chain rule used for in language modeling? 
-c)	c) How would you estimate P(water | its) using a corpus?`,
-    answer: `a) A language model predicts the probability of word sequences and the next word.
-b) The chain rule splits sentence probability into conditional probabilities.
-c) P(water | its) = count(its water) / count(its)
-Count "its water" and divide by count(its).`,
+    category: "Transformations",
+    question: "Describe the difference between uniform scaling and differential scaling.",
+    answer: "- **Uniform Scaling:** The scaling factors in all dimensions are equal ($s_x = s_y$). This preserves the object's proportions.\n- **Differential Scaling:** The scaling factors are not equal ($s_x \\neq s_y$). This distorts the object's shape and is often used in modeling applications.",
   },
   {
     id: 25,
-    category: "N-grams",
-    question: `Question 7: 
-Assume the following: 
-•	P(I want to eat British food) = 0.000080 
-•	P(I want to eat Chinese food) = 0.00015 
-a) Which sentence has a higher probability according to the model? 
-b) Based on the BERP fragments in Slide 11 and 12, which specific bigram probabilities cause the difference? 
-c) What does this suggest about the model's "knowledge" of cuisine preferences?`,
-    answer: `a) "I want to eat Chinese food" has the higher probability (0.00015 > 0.000080). 
-b) Because P(Chinese | eat) is higher than P(British | eat).
- c) The model depends on training data frequency, not real-world knowledge`,
+    category: "Transformations",
+    question: "Derive the 2D rotation matrix for a rotation of angle about the origin.",
+    answer: "From the basic rotation equations:\n\n$$x' = x \\cos \\theta - y \\sin \\theta$$\n$$y' = x \\sin \\theta + y \\cos \\theta$$\n\nThese can be written in matrix form as:\n\n$$R = \\begin{bmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{bmatrix}$$",
   },
   {
     id: 26,
-    category: "N-grams",
-    question: `Question 6: 
-Assume P(food | to) = 0. 
-a)	Explain why this probability is zero in the given BERP table. 
-b)	 What problem does this illustrate in simple n-gram models? 
-c)	 Name one technique to address this problem.`,
-    answer: `a) P(food | to) = 0 because "to food" did not occur in the training data.
-b) This shows the data sparsity problem in n-gram models.
-c) It can be solved using smoothing, such as Laplace smoothing.`,
+    category: "Transformations",
+    question: "A point $P = (5, 1)$ is rotated about the origin by $90^\\circ$. Use the rotation matrix to find the transformed point $P'$.",
+    answer: "For $\\theta = 90^\\circ$, the rotation matrix $R$ is:\n\n$$R = \\begin{bmatrix} \\cos(90^\\circ) & -\\sin(90^\\circ) \\\\ \\sin(90^\\circ) & \\cos(90^\\circ) \\end{bmatrix} = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix}$$\n\nApplying the transformation $P' = R \\cdot P$:\n\n$$P' = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} \\begin{bmatrix} 5 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} (0)(5) + (-1)(1) \\\\ (1)(5) + (0)(1) \\end{bmatrix} = \\begin{bmatrix} -1 \\\\ 5 \\end{bmatrix}$$\n\nSo, $P' = (-1, 5)$.",
   },
   {
     id: 27,
-    category: "Morphology",
-    question: `Question 4: What are the two main levels of representation in two-level morphology, and what do they represent?`,
-    answer: `• Lexical Level: The stem + morphological info (e.g., cat +N +PL).
-• Surface Level: The actual final spelling (e.g., cats).`,
+    category: "Transformations",
+    question: "What is a reflection transformation? List the three common reflection axes/matrices mentioned in the lecture.",
+    answer: "A reflection transformation is a transformation that produces a mirror image of an object.\n\n**Common reflection axes:**\n1. Reflection about $x$-axis\n2. Reflection about $y$-axis\n3. Reflection about the line $y=x$",
   },
   {
     id: 28,
-    category: "Morphology",
-    question: `Question 5: What is the purpose of morphological parsing ?`,
-    answer: `To map between the surface level (actual spelling) and the lexical level (stem + info).`,
+    category: "Transformations",
+    question: "A triangle with vertices A(3,4), B(6,4), and C(5,6) is reflected about the diagonal line $y=x$. What is the reflection matrix used, and what are the coordinates of the reflected vertices?",
+    answer: "Reflection about $y = x$:\n\n$$M = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$$\n\nApplying $(x, y) \\rightarrow (y, x)$:\n\n* $A' = (4, 3)$\n* $B' = (4, 6)$\n* $C' = (6, 5)$",
   },
   {
     id: 29,
-    category: "Morphology",
-    question: `Question 6: In the context of two-level morphology transitions, explain the meaning of the notation c:c.`,
-    answer: `The symbol is the same on both levels (read 'c', write 'c').`,
+    category: "Transformations",
+    question: "Explain the concept of shearing in 2D transformations. What are the parameters that define a shear?",
+    answer: "**Shearing** is a transformation that slants the shape of an object, pushing points along a specific axis by an amount proportional to their perpendicular distance from that axis.\n\n**Parameters:**\n* $s_x$: shear factor along the $x$-axis (dependent on $y$)\n* $s_y$: shear factor along the $y$-axis (dependent on $x$)",
   },
   {
     id: 30,
-    category: "Morphology",
-    question: `Question 7: Explain the meaning of the notation +PL:s in the context of a transition in a two-level morphological model.`,
-    answer: `Lexical tag +PL becomes the letter s on the surface level.`,
+    category: "Transformations",
+    question: "A square has vertices A(0,0), B(1,0), C(1,1), and D(0,1). A shear transformation is applied with parameters $s_x = 1$ and $s_y = 2$ in both directions. Write the shear matrix and calculate the new coordinates of point C (1,1).",
+    answer: "Shear matrix (both directions):\n\n$$M = \\begin{bmatrix} 1 & s_x \\\\ s_y & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 1 \\\\ 2 & 1 \\end{bmatrix}$$\n\nFor point $C = (1, 1)$:\n\n$$x' = 1 \\cdot 1 + 1 \\cdot 1 = 2$$\n\n$$y' = 2 \\cdot 1 + 1 \\cdot 1 = 3$$\n\nSo, $C' = (2, 3)$",
   },
   {
     id: 31,
-    category: "Morphology",
-    question: `Question 8: What is the significance of the epsilon ( ) symbol in a transition like N: ?`,
-    answer: `The epsilon represents an empty string (it means the lexical tag becomes nothing on the surface level).`,
+    category: "Transformations",
+    question: "A point P(2, 3) is translated by (-1, 5) and then rotated by 180° about the origin. a) Write the translation matrix T and the rotation matrix R in homogeneous coordinates. b) Calculate the composite transformation matrix M that performs translation followed by rotation. c) Find the final coordinates of the point.",
+    answer: "### a) Matrices:\n\n* **Translation $T(-1, 5)$:**\n\n$$T = \\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 5 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Rotation $R(180^\\circ)$:**\n\n$$R = \\begin{bmatrix} \\cos 180^\\circ & -\\sin 180^\\circ & 0 \\\\ \\sin 180^\\circ & \\cos 180^\\circ & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n### b) Composite matrix $M = R \\cdot T$:\n\n$$M = \\begin{bmatrix} -1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 5 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 0 & 1 \\\\ 0 & -1 & -5 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n### c) Final coordinates of $P(2, 3)$:\n\n$$P' = M \\cdot P = \\begin{bmatrix} -1 & 0 & 1 \\\\ 0 & -1 & -5 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 2 \\\\ 3 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} (-1)(2) + 0 + 1(1) \\\\ 0 + (-1)(3) + (-5)(1) \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} -2 + 1 \\\\ -3 - 5 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} -1 \\\\ -8 \\\\ 1 \\end{bmatrix}$$\n\n$$P'(-1, -8)$$",
+  },
+  {
+    id: 32,
+    category: "Transformations",
+    question: "A triangle has vertices A(0, 0), B(2, 0), and C(1, 2). a) First, scale the triangle by a factor of 2 in the x-direction and 0.5 in the y-direction about the origin. Then, translate it by (3, 4). Find the vertices of the final triangle. b) Reverse the order: first translate the original triangle by (3, 4), then scale it by (2, 0.5) about the origin. Find the vertices of this final triangle and comment on why the results are different.",
+    answer: "## a) Sequence: Scale then Translate\n\n* **Scale matrix $S(2, 0.5)$:**\n\n$$S = \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 0.5 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Translation matrix $T(3, 4)$:**\n\n$$T = \\begin{bmatrix} 1 & 0 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Composite $M_1 = T \\cdot S$:**\n\n$$M_1 = \\begin{bmatrix} 1 & 0 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix} \\cdot \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 0.5 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & 0 & 3 \\\\ 0 & 0.5 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nApplying to vertices:\n\n* $A(0,0)$: $A' = (3, 4)$\n* $B(2,0)$: $B' = (2(2)+3, 0.5(0)+4) = (7, 4)$\n* $C(1,2)$: $C' = (2(1)+3, 0.5(2)+4) = (5, 5)$\n\nFinal triangle: $A'(3,4), B'(7,4), C'(5,5)$\n\n---\n\n## b) Sequence: Translate then Scale\n\n* **Composite $M_2 = S \\cdot T$:**\n\n$$M_2 = \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 0.5 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\cdot \\begin{bmatrix} 1 & 0 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & 0 & 6 \\\\ 0 & 0.5 & 2 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nApplying to original vertices:\n\n* $A(0,0)$: $A'' = (6, 2)$\n* $B(2,0)$: $B'' = (2(2)+6, 0.5(0)+2) = (10, 2)$\n* $C(1,2)$: $C'' = (2(1)+6, 0.5(2)+2) = (8, 3)$\n\nFinal triangle: $A''(6,2), B''(10,2), C''(8,3)$\n\n---\n\n**Comment:** The results are different because matrix multiplication is not commutative. The order of transformations matters.",
+  },
+  {
+    id: 33,
+    category: "Transformations",
+    question: "A rectangle has vertices P(1, 1), Q(5, 1), R(5, 4), S(1, 4). Scale the rectangle by a factor of 2 in the x-direction and 3 in the y-direction with respect to a fixed point F(2, 2). a) Derive the composite transformation matrix for scaling about a fixed point in terms of s_x, s_y, and (x_f, y_f). b) Apply this matrix to find the new coordinates of vertex R(5, 4). c) Verify that the fixed point F(2, 2) remains unchanged after the transformation.",
+    answer: "### a) Composite matrix for scaling about fixed point $F(x_f, y_f)$:\n\n$$M = T(x_f, y_f) \\cdot S(s_x, s_y) \\cdot T(-x_f, -y_f)$$\n\n$$M = \\begin{bmatrix} s_x & 0 & x_f(1 - s_x) \\\\ 0 & s_y & y_f(1 - s_y) \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nFor $F(2,2)$, $s_x=2$, $s_y=3$:\n\n$$M = \\begin{bmatrix} 2 & 0 & 2(1 - 2) \\\\ 0 & 3 & 2(1 - 3) \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & 0 & -2 \\\\ 0 & 3 & -4 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n### b) New coordinates of $R(5,4)$:\n\n$$R' = M \\cdot R = \\begin{bmatrix} 2 & 0 & -2 \\\\ 0 & 3 & -4 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 5 \\\\ 4 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 2(5) + 0 + (-2)(1) \\\\ 0 + 3(4) + (-4)(1) \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 10 - 2 \\\\ 12 - 4 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 8 \\\\ 1 \\end{bmatrix}$$\n\n$$R'(8, 8)$$\n\n---\n\n### c) Verify fixed point $F(2,2)$ remains unchanged:\n\n$$F' = M \\cdot F = \\begin{bmatrix} 2 & 0 & -2 \\\\ 0 & 3 & -4 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 2 \\\\ 2 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 4 + 0 - 2 \\\\ 0 + 6 - 4 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 2 \\\\ 1 \\end{bmatrix}$$\n\n$$F'(2, 2) \\quad \\checkmark$$",
+  },
+  {
+    id: 34,
+    category: "Transformations",
+    question: "A line segment from P(1, 1) to Q(4, 1) is rotated by 90° counterclockwise about the point A(2, 1). a) What is the sequence of transformations needed to perform this rotation? b) Find the composite transformation matrix for this rotation. c) Calculate the new coordinates of both P and Q after the rotation.",
+    answer: "### a) Sequence of transformations:\n\n1. Translate by vector $(-2, -1)$ to move pivot point $A(2,1)$ to origin\n2. Rotate by $90^\\circ$ counterclockwise about origin\n3. Translate back by vector $(2, 1)$\n\n---\n\n### b) Composite matrix for rotation about pivot $(x_r, y_r)$:\n\n$$M = \\begin{bmatrix} \\cos \\theta & -\\sin \\theta & x_r(1 - \\cos \\theta) + y_r \\sin \\theta \\\\ \\sin \\theta & \\cos \\theta & y_r(1 - \\cos \\theta) - x_r \\sin \\theta \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nFor $\\theta=90^\\circ$, $\\cos90^\\circ=0$, $\\sin90^\\circ=1$:\n\n$$M = \\begin{bmatrix} 0 & -1 & x_r(1 - 0) + y_r(1) \\\\ 1 & 0 & y_r(1 - 0) - x_r(1) \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & -1 & x_r + y_r \\\\ 1 & 0 & y_r - x_r \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nFor $A(2,1)$: $x_r=2$, $y_r=1$\n\n$$M = \\begin{bmatrix} 0 & -1 & 2 + 1 \\\\ 1 & 0 & 1 - 2 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & -1 & 3 \\\\ 1 & 0 & -1 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n### c) New coordinates:\n\nFor $P(1,1)$:\n\n$$P' = M \\cdot P = \\begin{bmatrix} 0 & -1 & 3 \\\\ 1 & 0 & -1 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 0(1) + (-1)(1) + 3(1) \\\\ 1(1) + 0(1) + (-1)(1) \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} -1 + 3 \\\\ 1 - 1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 0 \\\\ 1 \\end{bmatrix}$$\n\n$$P'(2,0)$$",
+  },
+  {
+    id: 35,
+    category: "Transformations",
+    question: "A point P(4, 5) undergoes the following sequence of transformations:\n1. Rotate by 30° counterclockwise about the origin.\n2. Scale by a factor of (1.5, 2) about the origin.\n3. Translate by (-2, 3).\n4. Reflect about the x-axis.\nDetermine the single composite transformation matrix that represents this entire sequence and use it to find the final coordinates of the point.",
+    answer: "## Step 1: Define individual matrices\n\n* **Rotation by $30^\\circ$:**\n\n$$R = \\begin{bmatrix} \\cos 30^\\circ & -\\sin 30^\\circ & 0 \\\\ \\sin 30^\\circ & \\cos 30^\\circ & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\approx \\begin{bmatrix} 0.866 & -0.5 & 0 \\\\ 0.5 & 0.866 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Scaling by $(1.5, 2)$:**\n\n$$S = \\begin{bmatrix} 1.5 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Translation by $(-2, 3)$:**\n\n$$T = \\begin{bmatrix} 1 & 0 & -2 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n* **Reflection about x-axis:**\n\n$$\\text{Refl}_x = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n## Step 2: Composite matrix $M = \\text{Refl}_x \\cdot T \\cdot S \\cdot R$\n\nFirst, compute $S \\cdot R$:\n\n$$S \\cdot R = \\begin{bmatrix} 1.5 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\cdot \\begin{bmatrix} 0.866 & -0.5 & 0 \\\\ 0.5 & 0.866 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1.299 & -0.75 & 0 \\\\ 1.0 & 1.732 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nThen, $T \\cdot (S \\cdot R)$:\n\n$$T \\cdot (S \\cdot R) = \\begin{bmatrix} 1 & 0 & -2 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix} \\cdot \\begin{bmatrix} 1.299 & -0.75 & 0 \\\\ 1.0 & 1.732 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1.299 & -0.75 & -2 \\\\ 1.0 & 1.732 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\nFinally, $\\text{Refl}_x \\cdot (T \\cdot S \\cdot R)$:\n\n$$M = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 1.299 & -0.75 & -2 \\\\ 1.0 & 1.732 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1.299 & -0.75 & -2 \\\\ -1.0 & -1.732 & -3 \\\\ 0 & 0 & 1 \\end{bmatrix}$$\n\n---\n\n## Step 3: Final coordinates of $P(4, 5)$\n\n$$P' = M \\cdot P = \\begin{bmatrix} 1.299 & -0.75 & -2 \\\\ -1.0 & -1.732 & -3 \\\\ 0 & 0 & 1 \\end{bmatrix} \\begin{bmatrix} 4 \\\\ 5 \\\\ 1 \\end{bmatrix}$$\n\n$$x' = 1.299(4) - 0.75(5) - 2(1) = 5.196 - 3.75 - 2 = -0.554$$\n\n$$y' = -1.0(4) - 1.732(5) - 3(1) = -4 - 8.66 - 3 = -15.66$$\n\nSo, the final coordinates are approximately $P'(-0.554, -15.66)$.",
+  },
+  {
+    id: 36,
+    category: "Transformations",
+    question: "A 3D object has a vertex at point P(2,-4,7). It is translated by a vector T=(4,-3,5).\n1. Write down the 4x4 translation matrix used for this operation.\n2. Calculate the new coordinates P' of the vertex after translation.\n3. Determine the inverse translation matrix that would return P' to its original position.",
+    answer: "## Problem 1\n\nGiven:\nPoint $P(2, -4, 7)$\nTranslation vector $\\mathbf{T} = (4, -3, 5)$\n\n### 1. Translation matrix ($4 \\times 4$)\n\n$$T = \\begin{pmatrix} 1 & 0 & 0 & 4 \\\\ 0 & 1 & 0 & -3 \\\\ 0 & 0 & 1 & 5 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\n---\n\n### 2. New coordinates $P'$\n\n$$P' = T \\cdot P$$\n\n$$\\begin{pmatrix} 1 & 0 & 0 & 4 \\\\ 0 & 1 & 0 & -3 \\\\ 0 & 0 & 1 & 5 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix} \\begin{pmatrix} 2 \\\\ -4 \\\\ 7 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 2 + 4 \\\\ -4 - 3 \\\\ 7 + 5 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ -7 \\\\ 12 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{P'(6, -7, 12)}$$\n\n---\n\n### 3. Inverse translation matrix\n\n$$T^{-1} = \\begin{pmatrix} 1 & 0 & 0 & -4 \\\\ 0 & 1 & 0 & 3 \\\\ 0 & 0 & 1 & -5 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$",
+  },
+  {
+    id: 37,
+    category: "Transformations",
+    question: "A point Q(4,2,6) is rotated by 90° (counterclockwise when looking from the positive half towards the origin).\n1. Calculate the new coordinates of the point if it is rotated about the X-axis.\n2. Calculate the new coordinates of the same original point Q if it is rotated about the Y-axis instead.",
+    answer: "## Problem 2\n\nGiven:\nPoint $Q(4, 2, 6)$\nRotation $90^\\circ$ counterclockwise when looking from positive half towards origin (i.e., **right-hand rule**).\n\n### 1. Rotation about X-axis\n\nMatrix for $+90^\\circ$ about X-axis:\n\n$$R_x(90^\\circ) = \\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & -1 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\n$$Q'_X = R_x \\cdot Q = \\begin{pmatrix} 4 \\\\ -6 \\\\ 2 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{Q'_X(4, -6, 2)}$$\n\n---\n\n### 2. Rotation about Y-axis\n\nMatrix for $+90^\\circ$ about Y-axis:\n\n$$R_y(90^\\circ) = \\begin{pmatrix} 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ -1 & 0 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\n$$Q''_Y = R_y \\cdot Q = \\begin{pmatrix} 0 \\cdot 4 + 0 \\cdot 2 + 1 \\cdot 6 \\\\ 2 \\\\ (-1) \\cdot 4 + 0 \\cdot 2 + 0 \\cdot 6 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 2 \\\\ -4 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{Q''_Y(6, 2, -4)}$$",
+  },
+  {
+    id: 38,
+    category: "Transformations",
+    question: "A rectangular prism is defined by a vertex R(3,5,2). It is scaled by the factors sx=2, sy=0.5, and sz=3, relative to the coordinate origin.\n1. Construct the 4x4 scaling matrix.\n2. Apply this matrix to point R to find the new coordinates R'.\n3. Explain what effect the different scaling factors have on the dimensions of the object.",
+    answer: "## Problem 3\n\nGiven:\nVertex $R(3, 5, 2)$  \nScaling factors $s_x = 2$, $s_y = 0.5$, $s_z = 3$\n\n### 1. Scaling matrix ($4 \\times 4$)\n\n$$S = \\begin{pmatrix} 2 & 0 & 0 & 0 \\\\ 0 & 0.5 & 0 & 0 \\\\ 0 & 0 & 3 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\n---\n\n### 2. New coordinates $R'$\n\n$$R' = S \\cdot R = \\begin{pmatrix} 2 \\cdot 3 \\\\ 0.5 \\cdot 5 \\\\ 3 \\cdot 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 2.5 \\\\ 6 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{R'(6, 2.5, 6)}$$\n\n---\n\n### 3. Effect of different scaling factors\n\n* $s_x = 2$ doubles the length in the X-direction.\n* $s_y = 0.5$ halves the length in the Y-direction.\n* $s_z = 3$ triples the length in the Z-direction.\n\nThus the object is stretched anisotropically, changing its shape (e.g., a cube becomes a rectangular cuboid).",
+  },
+  {
+    id: 39,
+    category: "Transformations",
+    question: "A triangle has vertices at A(2,2,2), B(5,2,2), and C(2,5,2).\n1. Reflect the triangle across the X-Y plane (z=0). Provide the coordinates of the reflected vertices A', B', and C'.\n2. Reflect the original triangle across the Y-Z plane (x=0). Provide the coordinates of the reflected vertices A'', B'', and C''.",
+    answer: "## Problem 4\n\nGiven:\nTriangle vertices $A(2, 2, 2)$, $B(5, 2, 2)$, $C(2, 5, 2)$\n\n### 1. Reflection across X-Y plane ($z = 0$)\n\nMatrix:\n\n$$M_{xy} = \\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & -1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\nApply to each vertex (sign of z changes):\n\n$$A'(2, 2, -2), \\quad B'(5, 2, -2), \\quad C'(2, 5, -2)$$\n\n$$\\boxed{A'(2, 2, -2), \\quad B'(5, 2, -2), \\quad C'(2, 5, -2)}$$\n\n---\n\n### 2. Reflection across Y-Z plane ($x = 0$)\n\nMatrix:\n\n$$M_{yz} = \\begin{pmatrix} -1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\nApply (sign of x changes):\n\n$$A''(-2, 2, 2), \\quad B''(-5, 2, 2), \\quad C''(-2, 5, 2)$$\n\n$$\\boxed{A''(-2, 2, 2), \\quad B''(-5, 2, 2), \\quad C''(-2, 5, 2)}$$",
+  },
+  {
+    id: 40,
+    category: "Transformations",
+    question: "A point S(1,1,1) is subjected to a shearing transformation.\n1. X-direction Shear: Calculate the new coordinates of the point if it is sheared in the X-direction with shearing factors xy=2 and xz=1. Use the matrix from the lecture where the x-coordinate is changed by the y and z values.\n2. Y-direction Shear: Calculate the new coordinates of the original point S(1,1,1) if it is sheared in the Y-direction with shearing factors yx=1 and yz=2.",
+    answer: "## Problem 5\n\nGiven:\nPoint $S(1, 1, 1)$\n\n### 1. X-direction shear (X changes by y and z)\n\nMatrix (from lecture):\n\n$$H_x = \\begin{pmatrix} 1 & sh_{xy} & sh_{xz} & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\nwith $sh_{xy} = 2$, $sh_{xz} = 1$.\n\n$$S' = H_x \\cdot S = \\begin{pmatrix} 1 \\cdot 1 + 2 \\cdot 1 + 1 \\cdot 1 \\\\ 1 \\\\ 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 + 2 + 1 \\\\ 1 \\\\ 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{S'_X(4, 1, 1)}$$\n\n---\n\n### 2. Y-direction shear (Y changes by x and z)\n\nMatrix:\n\n$$H_y = \\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ sh_{yx} & 1 & sh_{yz} & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$$\n\nwith $sh_{yx} = 1$, $sh_{yz} = 2$.\n\n$$S'' = H_y \\cdot S = \\begin{pmatrix} 1 \\\\ 1 \\cdot 1 + 1 \\cdot 1 + 2 \\cdot 1 \\\\ 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 + 1 + 2 \\\\ 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 4 \\\\ 1 \\\\ 1 \\end{pmatrix}$$\n\n$$\\boxed{S''_Y(1, 4, 1)}$$",
+  },
+  {
+    id: 41,
+    category: "Rendering Pipeline",
+    question: "Explain the concept of scan conversion. Why must the finite size of a pixel be taken into account when implementing line drawing algorithms on a raster display? Use assumption about integer screen positions to support your answer.",
+    answer: "**Scan Conversion:** The process of converting continuous geometric graphics (like lines) into discrete pixels on a raster display.\n\n**Why finite size matters:** Pixels are not mathematical points; they have a finite area. We must approximate which continuous points fall into which discrete pixel areas.\n\n**Integer assumption:** Screen coordinates are strictly integers (e.g., $(2, 3)$). Since line equations produce real numbers (e.g., $2.4$), we must round them to find the closest integer pixel position.",
+  },
+  {
+    id: 42,
+    category: "Rendering Pipeline",
+    question: "According to the simple slope-intercept algorithm (lineSimple). (a) What is the main limitation of this algorithm when drawing lines with slope greater than 1? (b) Describe the symmetry-based solution mentioned in the “Improved line Drawing Algorithm” section. (c) Why does the improved algorithm still have a performance problem (as noted on page 14)?",
+    answer: "**(a) Main Limitation ($m > 1$):** As $X$ steps by 1, $Y$ changes by more than 1, causing the line to become sparse with visible gaps.\n\n**(b) Symmetry Solution:** Swap the roles of $X$ and $Y$. When $m > 1$, increment $Y$ by 1 in each step and calculate the corresponding $X$ value.\n\n**(c) Performance Problem:** It still relies on floating-point multiplication ($y = m \\cdot x + b$) and the costly `round()` function at every step.",
+  },
+  {
+    id: 43,
+    category: "Rendering Pipeline",
+    question: "Using the DDA algorithm, manually compute all pixel coordinates needed to draw the line from (3, 2) to (10, 7). Show your step-by-step work including:\n• Calculating dx, dy, and steps\n• Determining xIncrement and yIncrement\n• The rounded pixel positions for each iteration",
+    answer: "### Setup Calculations:\n* $dx = 10 - 3 = 7$\n* $dy = 7 - 2 = 5$\n* $steps = \\max(|7|, |5|) = 7$\n* $xIncrement = 7 / 7 = 1$\n* $yIncrement = 5 / 7 \\approx 0.714$\n\n### Iteration Table\n\n| Iteration | Current X | Current Y | Pixel (X, Y) |\n| :--- | :--- | :--- | :--- |\n| Start | 3 | 2 | (3, 2) |\n| 1 | 4 | 2.714 | (4, 3) |\n| 2 | 5 | 3.428 | (5, 3) |\n| 3 | 6 | 4.142 | (6, 4) |\n| 4 | 7 | 4.856 | (7, 5) |\n| 5 | 8 | 5.570 | (8, 6) |\n| 6 | 9 | 6.284 | (9, 6) |\n| 7 | 10 | 6.998 | (10, 7) |",
+  },
+  {
+    id: 44,
+    category: "Rendering Pipeline",
+    question: "The DDA algorithm uses floating-point arithmetic and the round() function. (a) List two advantages of DDA mentioned in the lecture. (b) List two disadvantages of DDA mentioned in the lecture. (c) Based on the “Optimization Rules” (page 15), suggest one concrete change to the DDA algorithm that could reduce its time complexity.",
+    answer: "**(a) Two Advantages:**\n1. Faster than slope-intercept by eliminating multiplication (uses addition).\n2. Simple and easy to implement.\n\n**(b) Two Disadvantages:**\n1. Still uses floating-point accumulation (accumulates rounding errors).\n2. Time-consuming due to the `round()` function call in every loop.\n\n**(c) Concrete Change:**\nUse Fixed-point arithmetic to store fractional parts as integers, eliminating floating-point operations and the `round()` function entirely.",
+  },
+  {
+    id: 45,
+    category: "Rendering Pipeline",
+    question: "Define aliasing as presented in the lecture. Explain why diagonal lines on a raster display appear jagged, and describe how anti-aliasing helps to reduce this effect. (Refer to page 9 for terminology.)",
+    answer: "**Aliasing:** Distortion or artifacts (like jagged edges) caused by under-sampling a continuous signal on a discrete pixel grid.\n\n**Why diagonal lines look jagged:** A smooth diagonal line must be represented by a staircase pattern of square pixels aligned on a strict horizontal/vertical grid.\n\n**How anti-aliasing helps:** It softens the edges by adjusting pixel intensities (shades of color) based on how much of the pixel area is covered by the ideal line.",
+  },
+  {
+    id: 46,
+    category: "Rendering Pipeline",
+    question: "Explicit Equation Method – Gaps and Inefficiency\nYou are asked to draw a circle with radius r=15 and center at (0,0) using the explicit equation:\n$$y = \\pm\\sqrt{r^2 - x^2}$$\nYou increment x from 0 to 15 in steps of 1 and compute the corresponding positive y values.\nTasks: a) Compute y for x=0,1,2,14,15 (show calculations). b) Why does this method produce gaps near x=r? Explain using the slope of the circle. c) Calculate the Euclidean distance between two consecutive plotted pixels when x=14 and x=15. What problem does this cause? d) Suggest a simple improvement to reduce gaps without changing the method fundamentally.",
+    answer: "## Circle Drawing: Explicit Equation Method\n\n### Given:\n* Radius $r = 15$, Center $(0,0)$\n* Equation: $y = \\pm\\sqrt{r^2 - x^2}$\n* $x$ ranges from $0$ to $15$ (Step = $1$)\n\n---\n\n### a) Key Calculations\n* **$x = 0$:** $y = \\sqrt{225 - 0} = 15.0$\n* **$x = 1$:** $y = \\sqrt{225 - 1} \\approx 14.97$\n* **$x = 2$:** $y = \\sqrt{225 - 4} \\approx 14.87$\n* **$x = 14$:** $y = \\sqrt{225 - 196} \\approx 5.39$\n* **$x = 15$:** $y = \\sqrt{225 - 225} = 0.0$\n\n---\n\n### b) The Problem: Gaps Near $x = r$\nWhen $x$ gets close to the radius ($r$), the circle's curve becomes nearly **vertical** (slope approaches infinity). \n\n* **Example:** As $x$ steps from $14$ to $15$, $y$ drops sharply from $\\approx 5.39$ to $0$.\n* This leaves a **5-pixel gap** in the vertical $y$ positions, making the plotted circle look broken or disconnected.\n\n---\n\n### c) Distance Check ($x = 14$ to $x = 15$)\n\n$$\\text{Distance} = \\sqrt{(15 - 14)^2 + (0 - 5.39)^2} = \\sqrt{1 + 29} \\approx 5.48 \\text{ pixels}$$\n\n> ⚠️ **Note:** For a smooth, continuous curve, adjacent pixels should ideally be no more than $\\approx 1.5$ pixels apart. A distance of $5.48$ confirms a visible gap.\n\n---\n\n### d) Solutions & Improvements\n1. **Smaller Steps:** Decrease the $x$ increment (e.g., step by $0.1$ instead of $1$). *Disadvantage: Highly inefficient.*\n2. **Swap Roles:** Switch $x$ and $y$ plotting when the slope exceeds $1$.\n3. **Best Solution:** Use the **Midpoint Circle Algorithm** (Bresenham's) to eliminate gaps efficiently without heavy floating-point math.",
+  },
+  {
+    id: 47,
+    category: "Rendering Pipeline",
+    question: "A circle of radius $r = 20$ is to be drawn using parametric equations:\n$$x = r \\cos \\theta, \\quad y = r \\sin \\theta$$\nYou step $\\theta$ from $0^\\circ$ to $90^\\circ$ (first quadrant).\n\n### Tasks:\na) If you use a fixed angular increment $\\Delta\\theta = 5^\\circ$, calculate the coordinates for $\\theta = 0^\\circ, 45^\\circ, 90^\\circ$ (use $\\cos 45^\\circ = \\sin 45^\\circ \\approx 0.7071$).\n\nb) What is the maximum distance between consecutive pixels along the circumference when using $\\Delta\\theta = 5^\\circ$? (Arc length formula: $\\text{arc} = r \\cdot \\Delta\\theta$ in radians).\n\nc) To ensure that the gap between adjacent pixels is at most 1 unit, what should the angular increment $\\Delta\\theta$ be (in radians and degrees)?\n\nd) Why is the parametric method still considered computationally expensive in practice?",
+    answer: "Given: $r = 20, \\quad x = r \\cos \\theta, \\quad y = r \\sin \\theta, \\quad \\theta \\text{ from } 0^\\circ \\text{ to } 90^\\circ$.\n\n---\n\n### a) Coordinates for $\\Delta \\theta = 5^\\circ$\n\n* **$\\theta = 0^\\circ$:** $x = 20 \\cos 0^\\circ = 20$  \n  $y = 20 \\sin 0^\\circ = 0$\n\n* **$\\theta = 45^\\circ$:** $x = 20 \\times 0.7071 = 14.142$  \n  $y = 14.142$\n\n* **$\\theta = 90^\\circ$:** $x = 20 \\cos 90^\\circ = 0$  \n  $y = 20 \\sin 90^\\circ = 20$\n\n---\n\n### b) Maximum distance between consecutive pixels for $\\Delta \\theta = 5^\\circ$\n\n1. **Convert $\\Delta \\theta$ to radians:** $$5^\\circ = \\frac{\\pi}{36} \\approx 0.08727 \\text{ rad}$$\n\n2. **Calculate Arc length ($s$):** $$s = r \\cdot \\Delta \\theta = 20 \\times 0.08727 \\approx 1.745 \\text{ units}$$\n\n> **Note:** For small angles, the straight-line distance (chord length) between two adjacent points is almost equal to the arc length. Therefore, the maximum gap is **$\\approx 1.75$ pixels**.\n\n---\n\n### c) Angular increment for gap $\\le 1$ unit\n\nWe need:  \n$$r \\cdot \\Delta \\theta \\le 1 \\implies \\Delta \\theta \\le \\frac{1}{20} = 0.05 \\text{ rad}$$\n\nIn degrees:  \n$$0.05 \\times \\frac{180^\\circ}{\\pi} \\approx 2.86^\\circ$$\n\n---\n\n### d) Why computationally expensive?\n\n* **Slow Trigonometry:** Calculating trigonometric functions ($\\cos$, $\\sin$) for every pixel is slow in both hardware and software.\n* **Complex Optimization:** Finding the exact $\\Delta \\theta$ to prevent gaps without over-sampling requires extra, heavy processing.\n* **Better Alternative:** The midpoint algorithm is much faster because it uses only simple integer addition and subtraction.",
+  },
+  {
+    id: 48,
+    category: "Rendering Pipeline",
+    question: "## Problem 3: Midpoint Circle Algorithm – Step-by-Step Execution\n\nApply the Midpoint Circle Algorithm (with integer approximation $p_0 = 1 - r$) to draw a circle centered at the origin with radius $r = 8$.\n\n### Tasks:\n\n**a) Compute the initial decision parameter $p_0$ exactly (using $5/4 - r$) and its integer approximation.**\n\n**b) Execute the algorithm from $x = 0$ until $x \\ge y$. Fill the following table for each step:**\n\n| $x_k$ | $y_k$ | $p_k$ | Next pixel (E or SE) | $x_{k+1}$ | $y_{k+1}$ | $p_{k+1}$ |\n| :---: | :---: | :---: | :------------------: | :-------: | :-------: | :-------: |\n|       |       |       |                      |           |           |           |\n\nShow all calculations for $p_{k+1}$ using the update rules:\n* If $p_k < 0$: $p_{k+1} = p_k + 2x_{k+1} + 1$\n* If $p_k \\ge 0$: $p_{k+1} = p_k + 2x_{k+1} + 1 - 2y_{k+1}$\n\n---\n\n**c) List all the calculated points in the first octant (where $x \\le y$).**\n\n**d) Using eight-way symmetry, write down all the symmetric points for the first octant point $(3, 7)$.**",
+    answer: "### a) Initial decision parameter\n\n* **Exact:** $p_0 = \\frac{5}{4} - r = 1.25 - 8 = -6.75$\n* **Integer approximation:** $p_0 = 1 - r = 1 - 8 = -7$\n\nWe will use the integer version for manual steps (common in implementations).\n\n---\n\n### b) Execution table\n\nInitial: $x_0 = 0, \\quad y_0 = 8, \\quad p_0 = -7$\n\n| $x_k$ | $y_k$ | $p_k$ | Next pixel | $x_{k+1}$ | $y_{k+1}$ | $p_{k+1}$ Calculation |\n| :---: | :---: | :---: | :--------: | :-------: | :-------: | :--- |\n| 0 | 8 | -7 | E (since $<0$) | 1 | 8 | $p_{k+1} = -7 + 2(1) + 1 = -4$ |\n| 1 | 8 | -4 | E (since $<0$) | 2 | 8 | $p_{k+1} = -4 + 2(2) + 1 = 1$ |\n| 2 | 8 | 1 | SE (since $\\ge0$) | 3 | 7 | $p_{k+1} = 1 + 2(3) + 1 - 2(7) = -6$ |\n| 3 | 7 | -6 | E (since $<0$) | 4 | 7 | $p_{k+1} = -6 + 2(4) + 1 = 3$ |\n| 4 | 7 | 3 | SE (since $\\ge0$) | 5 | 6 | $p_{k+1} = 3 + 2(5) + 1 - 2(6) = 2$ |\n| 5 | 6 | 2 | SE (since $\\ge0$) | 6 | 5 | $p_{k+1} = 2 + 2(6) + 1 - 2(5) = 5$ |\n| 6 | 5 | 5 | SE (since $\\ge0$) | 7 | 4 | $p_{k+1} = 5 + 2(7) + 1 - 2(4) = 12$ |\n| 7 | 4 | 12 | SE (since $\\ge0$) | 8 | 3 | **Stop:** At the start of next iteration, $x = 7$ and $y = 4$. Since $x \\ge y$ ($7 \\ge 4$), the loop ends. |\n\n---\n\n### c) List of points in first octant ($x \\le y$)\n\n$$(0,8), \\quad (1,8), \\quad (2,8), \\quad (3,7), \\quad (4,7), \\quad (5,6), \\quad (6,5), \\quad (7,4)$$\n\n---\n\n### d) Symmetric points for $(3,7)$\n\nUsing eight-way symmetry for a point $(x,y)$ on a circle centered at the origin:\n\n1. $(x, y) = (3, 7)$\n2. $(-x, y) = (-3, 7)$\n3. $(x, -y) = (3, -7)$\n4. $(-x, -y) = (-3, -7)$\n5. $(y, x) = (7, 3)$\n6. $(-y, x) = (-7, 3)$\n7. $(y, -x) = (7, -3)$\n8. $(-y, -x) = (-7, -3)$",
   },
 ];

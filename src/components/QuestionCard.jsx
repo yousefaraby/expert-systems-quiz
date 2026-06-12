@@ -1,17 +1,22 @@
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import {
   Eye, CheckCircle2, Circle, Copy, Check,
-  ChevronDown, ChevronUp, Tag
+  ChevronUp
 } from 'lucide-react';
 
 // ── Color map per category ──────────────────────────────────
 const CAT_STYLES = {
-  'NLP':                  { badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',       dot: 'bg-blue-500'    },
-  'Regular Expressions':  { badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300', dot: 'bg-emerald-500' },
-  'Automata':             { badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',   dot: 'bg-amber-500'   },
-  'Morphology':           { badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',       dot: 'bg-rose-500'    },
-  'N-grams':              { badge: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300', dot: 'bg-purple-500' },
+  'Introduction':         { badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',       dot: 'bg-blue-500'    },
+  'Imaging':              { badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300', dot: 'bg-emerald-500' },
+  'Rendering Pipeline':   { badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',   dot: 'bg-amber-500'   },
+  'Modeling':             { badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',       dot: 'bg-rose-500'    },
+  'Hardware & Displays':  { badge: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300', dot: 'bg-purple-500' },
+  'Math & Geometry':      { badge: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300',       dot: 'bg-cyan-500'    },
+  'Transformations':      { badge: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300', dot: 'bg-orange-500' },
 };
 
 /**
@@ -28,7 +33,7 @@ export default function QuestionCard({
   const [showAnswer, setShowAnswer] = useState(false);
   const [copied, setCopied]         = useState(false);
 
-  const catStyle = CAT_STYLES[question.category] || CAT_STYLES['NLP'];
+  const catStyle = CAT_STYLES[question.category] || CAT_STYLES['Introduction'];
 
   const animClass = {
     right:  'animate-slide-in-right',
@@ -149,7 +154,12 @@ export default function QuestionCard({
                                 prose-th:bg-slate-200 dark:prose-th:bg-slate-700
                                 prose-td:py-1 prose-td:px-2
                                 prose-p:leading-relaxed prose-li:leading-relaxed">
-                  <ReactMarkdown>{question.answer}</ReactMarkdown>
+                  <ReactMarkdown 
+                    remarkPlugins={[remarkMath]} 
+                    rehypePlugins={[rehypeKatex]}
+                  >
+                    {question.answer}
+                  </ReactMarkdown>
                 </div>
               </div>
             )}

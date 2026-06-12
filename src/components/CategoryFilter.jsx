@@ -1,14 +1,16 @@
 // Category filter chip list
-const CATEGORIES = ['All', 'NLP', 'Regular Expressions', 'Automata', 'Morphology', 'N-grams'];
+const CATEGORIES = ['All', 'Introduction', 'Imaging', 'Rendering Pipeline', 'Modeling', 'Hardware & Displays', 'Math & Geometry', 'Transformations'];
 
 // Color map for each category
 const CAT_COLORS = {
   'All':                  'bg-violet-600 text-white border-violet-600',
-  'NLP':                  'bg-blue-600 text-white border-blue-600',
-  'Regular Expressions':  'bg-emerald-600 text-white border-emerald-600',
-  'Automata':             'bg-amber-500 text-white border-amber-500',
-  'Morphology':           'bg-rose-500 text-white border-rose-500',
-  'N-grams':              'bg-purple-600 text-white border-purple-600',
+  'Introduction':         'bg-blue-600 text-white border-blue-600',
+  'Imaging':              'bg-emerald-600 text-white border-emerald-600',
+  'Rendering Pipeline':   'bg-amber-500 text-white border-amber-500',
+  'Modeling':             'bg-rose-500 text-white border-rose-500',
+  'Hardware & Displays':  'bg-purple-600 text-white border-purple-600',
+  'Math & Geometry':      'bg-cyan-600 text-white border-cyan-600',
+  'Transformations':      'bg-orange-500 text-white border-orange-500',
 };
 
 // Inactive style

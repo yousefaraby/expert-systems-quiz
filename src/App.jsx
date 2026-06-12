@@ -50,7 +50,7 @@ function LoadingScreen() {
       <p className="text-violet-300 font-semibold text-lg tracking-wide animate-pulse">
         Loading your study session…
       </p>
-      <p className="text-slate-500 text-sm mt-2">Natural Language Processing</p>
+      <p className="text-slate-500 text-sm mt-2">Computer Graphics</p>
     </div>
   );
 }
